@@ -1,0 +1,68 @@
+
+
+
+  <view class="radio-group">
+    <view class="radio-item" bindtap="handleRadioChange" data-value="1">
+      <view class="radio-icon {{ selectedOption === 1 ? 'selected' : '' }}"></view>
+      <text class="radio-label">选项1</text>
+    </view>
+    <view class="radio-item" bindtap="handleRadioChange" data-value="2">
+      <view class="radio-icon {{ selectedOption === 2 ? 'selected' : '' }}"></view>
+      <text class="radio-label">选项2</text>
+    </view>
+    <view class="radio-item" bindtap="handleRadioChange" data-value="3">
+      <view class="radio-icon {{ selectedOption === 3 ? 'selected' : '' }}"></view>
+      <text class="radio-label">选项3</text>
+    </view>
+  </view>
+
+
+  <view class="content">
+    <view wx:if="{{ selectedOption === 1 }}" style="font-size: 20px;">
+    <van-cell-group inset>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="用户名"
+    placeholder="请输入用户名"
+
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="密码"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+  <van-cell title="用餐人数" >
+  <van-stepper  value="{{peopleNum}}" min="0" max="6" integer/>
+  </van-cell>
+<van-cell title="口味偏好">
+        <view class="cell-content">
+ 
+          <van-checkbox-group bind:change="handleFlavorChange" value="{{ flavorChecked }}">
+            <van-checkbox name="酸">酸</van-checkbox>
+            <van-checkbox name="辣">辣</van-checkbox>
+            <van-checkbox name="甜">甜</van-checkbox>
+            <!-- 其他口味偏好选项 -->
+          </van-checkbox-group>
+        </view>
+      </van-cell>
+
+
+</van-cell-group>
+
+
+
+
+
+
+    
+   </view>
+    <view wx:if="{{ selectedOption === 2 }}" style="font-size: 20px;">选项2的内容</view>
+    <view wx:if="{{ selectedOption === 3 }}" style="font-size: 20px;">选项3的内容</view>
+  </view>
+

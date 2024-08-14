@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<!-- 搜索框 -->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+<!-- 通知 -->
+<van-notice-bar
+  left-icon="volume-o"
+  text="黄焖鸡是真的好吃好吃好好吃"
+/>
+
+<!-- 轮播图 -->
+<swiper wx:if="{{banners}}" class="swiper1" indicator-dots="true" autoplay circular>
+<swiper-item wx:for="{{banners}}" wx:key="id">
+<image mode="aspectFill" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}"  />
+</swiper-item>
+</swiper>
+<!-- 宫格 -->
+<van-divider contentPosition="center">菜品种类</van-divider>
+<van-grid clickable>
+  <van-grid-item 
+
+
+   icon="https://pic1.imgdb.cn/item/646e25ae0d2dde57776be244.jpg"  
+  link-type="navigateTo"
+  url="/pages/vegetables/vegetables"
+   text="蔬菜" />
+
+  <van-grid-item icon="https://pic1.imgdb.cn/item/646e25e70d2dde57776c3108.jpg"  
+   link-type="navigateTo"
+  url="/pages/redmeat/redmeat"
+  text="红肉" />
+  <van-grid-item icon="https://pic1.imgdb.cn/item/646e26a80d2dde57776d53ed.jpg"
+ link-type="navigateTo"
+  url="/pages/fish/fish"
+   text="鱼类" />
+  <van-grid-item icon="https://pic1.imgdb.cn/item/646e26f40d2dde57776ddd8d.png" 
+   link-type="navigateTo"
+  url="/pages/bird/bird"
+  text="禽类" />
+</van-grid>
+
+<van-grid clickable>
+  <van-grid-item
+    icon="home-o"
+    link-type="navigateTo"
+    url="/pages/randomMenu/randomMenu"
+    text="随机菜单"
+  />
+   <van-grid-item
+    icon="https://img1.baidu.com/it/u=1520986191,1473827597&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+    link-type="navigateTo"
+    url="/pages/randomMenu/randomMenu"
+    text="随机单份菜"
+  />
+  <van-grid-item
+    icon="label-o"
+    link-type="navigateTo"
+    url="/pages/allMenu/allMenu"
+    text="全部菜单"
+  />
+
+
+</van-grid>
+
+
+<!-- 为您推荐 -->
+<van-divider contentPosition="center">为您推荐</van-divider>

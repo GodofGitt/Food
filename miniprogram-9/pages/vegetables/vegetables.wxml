@@ -1,0 +1,27 @@
+<!--蔬菜菜谱-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+
+<text decode="{{true}}">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</text>
+<van-button bindtap="set" class="button1" round="true" type="info">今日蔬菜</van-button>
+
+
+<view style="text-align: center;">
+  <view hidden='{{hidden}}' >
+    <image mode='widthFix' src='{{imgUrl}}'></image>
+    <button style="margin-top: 25rpx;" type="warn" bindtap='yincang'>隐藏</button>
+  </view>
+ 
+  <view wx:if="{{hidden}}">
+   <button style="margin-top: 25rpx;" wx:if="{{hidden}}" type="primary" bindtap='xianshi'>显示</button>
+  </view>
+</view>
+<text decode="{{true}}" >菜品&emsp;</text>
+<text>{{vegetable}}</text>
+
+

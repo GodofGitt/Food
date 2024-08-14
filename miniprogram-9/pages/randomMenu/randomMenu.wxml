@@ -1,0 +1,39 @@
+<!--pages/randomMenu/randomMenu.wxml-->
+
+
+
+
+<van-cell-group inset>
+  <van-cell title="菜" >
+  <van-stepper bind:change="onChangeDish" value="{{dishNum}}" min="0" max="10" />
+  </van-cell>
+
+  <van-cell title="汤" >
+  <van-stepper bind:change="onChangeSoup"  value="{{soupNum}}" min="0" max="2" />
+  </van-cell>
+
+</van-cell-group>
+<van-button type="primary"  bindtap="setMenu" size="large">生成菜单</van-button>
+
+<van-cell-group inset>
+  <van-cell title="{{dish0}}" value="内容" label="主菜" />
+</van-cell-group>
+
+<van-cell-group inset>
+  <van-cell title="手撕包菜" value="内容" label="素菜" />
+</van-cell-group>
+<van-cell-group inset>
+  <van-cell title="青菜豆腐汤" value="内容" label="汤类" />
+</van-cell-group><van-cell-group inset>
+  <van-cell title="青菜豆腐汤" value="内容" label="汤类" />
+</van-cell-group>
+<van-cell-group inset>
+  <van-cell title="青菜豆腐汤" value="内容" label="汤类" />
+</van-cell-group>
+<van-cell-group inset>
+  <van-cell title="青菜豆腐汤" value="内容" label="汤类" />
+</van-cell-group>
+
+
+<text>{{soupNum}}</text>
+<text>{{dishNum}}</text>

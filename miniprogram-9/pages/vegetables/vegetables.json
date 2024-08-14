@@ -1,0 +1,8 @@
+
+{
+   "navigationBarTitleText": "蔬菜品类",
+ "usingComponents": {
+  "van-button": "@vant/weapp/button/index"
+}
+
+}

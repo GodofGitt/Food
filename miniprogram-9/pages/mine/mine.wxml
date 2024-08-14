@@ -1,0 +1,57 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="flex-col page">
+  <view class="flex-col">
+    <view class="flex-col group">
+      <view class="flex-col justify-start items-start relative section">
+        <text class="text">搜索...</text>
+        <view class="flex-col justify-start items-start image-wrapper pos">
+          <image
+            class="image"
+            src="https://ide.code.fun/api/image?token=6579d767fcfbac001138f93d&name=9564b023754328301071397f2e07e4ea.png"
+          />
+        </view>
+      </view>
+      <view class="input section_2 mt-9"></view>
+    </view>
+    <view class="flex-row justify-between items-start section_3">
+      <view class="flex-col group_2">
+        <view class="self-start section_4"></view>
+        <view class="mt-16 self-stretch section_5"></view>
+      </view>
+      <image
+        class="image_2"
+        src="https://ide.code.fun/api/image?token=6579d767fcfbac001138f93d&name=85e5b5c0cfcd1ec07ae089052f5276b0.png"
+      />
+    </view>
+    <view class="flex-row justify-center items-center group_3">
+      <view class="section_6"></view>
+      <text class="ml-14 text_2">菜品种类</text>
+      <view class="ml-14 section_6"></view>
+    </view>
+  </view>
+  <view class="mt-32 flex-row justify-between group_4">
+    <view class="section_7"></view>
+    <view class="section_7"></view>
+    <view class="section_7"></view>
+    <view class="section_7 view"></view>
+  </view>
+  <view class="mt-32 flex-row justify-between group_4">
+    <view class="section_7"></view>
+    <view class="section_7"></view>
+    <view class="section_7"></view>
+    <view class="section_7 view"></view>
+  </view>
+  <view class="mt-32 flex-col group_4">
+    <view class="flex-row">
+      <view class="section_5 view_2"></view>
+      <view class="section_5 view_3 ml-35"></view>
+    </view>
+    <view class="mt-20 flex-row">
+      <view class="section_8"></view>
+      <view class="ml-40 section_8"></view>
+      <view class="ml-40 section_8"></view>
+      <view class="ml-40 section_8"></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+/**index.wxss**/
+.swiper1 image{
+  width: 100%;
+  height:100%;
+}
+.swiper1{
+  height:30vh;
+ 
+}

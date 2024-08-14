@@ -1,0 +1,118 @@
+/* pages/mine/mine.wxss */
+.mt-9 {
+  margin-top: 18.75rpx;
+}
+.ml-35 {
+  margin-left: 72.92rpx;
+}
+.page {
+  padding-bottom: 10.42rpx;
+  background-color: #fffbe9;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.group {
+  padding: 29.17rpx 8.33rpx 14.58rpx;
+}
+.section {
+  padding: 25rpx 0;
+  background-color: #ffffff;
+  border-radius: 41.67rpx;
+}
+.text {
+  margin-left: 75rpx;
+  color: #000000;
+  font-size: 33.33rpx;
+  font-family: HarmonyOSSansSC;
+  line-height: 30.6rpx;
+  opacity: 0.6;
+}
+.image-wrapper {
+  padding: 16.67rpx 0;
+  background-image: url('https://ide.code.fun/api/image?token=6579d767fcfbac001138f93d&name=059e1abbc8f73b654741199c45ac0fa5.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.pos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.image {
+  margin-left: 20.83rpx;
+  width: 54.17rpx;
+  height: 50rpx;
+}
+.input {
+  margin-left: 8.33rpx;
+  margin-right: 18.75rpx;
+}
+.section_2 {
+  background-color: #f2903ab8;
+  border-radius: 41.67rpx;
+  height: 45.83rpx;
+}
+.section_3 {
+  margin-left: 18.75rpx;
+  margin-right: 27.08rpx;
+  padding: 108.33rpx 27.08rpx 27.08rpx 50rpx;
+  background-color: #ccd6a6;
+}
+.group_2 {
+  margin-top: 64.58rpx;
+  width: 352.08rpx;
+}
+.section_4 {
+  background-color: #dae2b6;
+  width: 118.75rpx;
+  height: 35.42rpx;
+}
+.section_5 {
+  background-color: #dae2b6;
+  height: 137.5rpx;
+}
+.image_2 {
+  width: 166.67rpx;
+  height: 166.67rpx;
+}
+.group_3 {
+  margin-top: 25rpx;
+}
+.section_6 {
+  background-color: #757d54;
+  width: 291.67rpx;
+  height: 2.08rpx;
+}
+.text_2 {
+  color: #70755a;
+  font-size: 25rpx;
+  font-family: SourceHanSansCN;
+  line-height: 23rpx;
+}
+.group_4 {
+  padding: 0 35.42rpx;
+}
+.section_7 {
+  background-color: #ccd6a6;
+  width: 104.17rpx;
+  height: 104.17rpx;
+}
+.view {
+  margin-right: 43.75rpx;
+}
+.view_2 {
+  flex: 1 1 281.25rpx;
+}
+.view_3 {
+  margin-right: 41.67rpx;
+  flex: 1 1 281.25rpx;
+}
+.section_8 {
+  background-color: #c78787;
+  width: 93.75rpx;
+  height: 93.75rpx;
+}

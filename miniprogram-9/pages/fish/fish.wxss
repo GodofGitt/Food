@@ -1,0 +1,55 @@
+
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+}
+
+.radio-icon {
+  width: 20rpx;
+  height: 20rpx;
+  border: 1rpx solid #999;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.selected {
+  background-color: #333;
+}
+
+.radio-label {
+  color: #333;
+}
+
+.content {
+  margin-top: 20rpx;
+  font-size: 16rpx;
+}
+.custom-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20rpx; /* 调整右边距的数值 */
+}
+
+
+.cell-content {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80rpx; /* 调整数字选择框和用餐人数文字之间的间距 */
+}
+
+.cell-label {
+  color: #333;
+  font-size: 30rpx;
+  margin-right: 10rpx;
+
+}
+
